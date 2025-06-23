@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RideShare | Modern Car Sharing Marketplace</title>
+    <link rel="icon" type="image/svg+xml" href="icons/favicon.svg">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap">
+    <link rel="stylesheet" type="text/css" href="css/home.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <a href="home.html" class="logo">
+                    <div class="logo-icon">R</div>
+                    RideShare
+                </a>
+                
+                <div class="nav-menu">
+                    <div class="nav-links">
+                        <a href="home.html" class="active">Home</a>
+                        <a href="browse.html">Browse Cars</a>
+                        <a href="host.html">List Your Car</a>
+                    </div>
+                    
+                    <!-- User is logged in -->
+                    <div class="avatar-dropdown">
+                        <button class="avatar-btn">
+                            <div class="avatar">JD</div>
+                            <div class="avatar-info">
+                                <div class="avatar-name">John Doe</div>
+                                <div class="avatar-email">john@example.com</div>
+                            </div>
+                            <svg class="dropdown-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="6 9 12 15 18 9"></polyline>
+                            </svg>
+                        </button>
+                        
+                        <div class="dropdown-menu">
+                            <div class="dropdown-header">
+                                <div class="dropdown-name">John Doe</div>
+                                <div class="dropdown-email">john@example.com</div>
+                            </div>
+                            
+                            <div class="dropdown-links">
+                                <a href="#" class="dropdown-link">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                                        <circle cx="12" cy="7" r="4"></circle>
+                                    </svg>
+                                    My Profile
+                                </a>
+                                <a href="#" class="dropdown-link">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M21 4H8l-7 8 7 8h13a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2z"></path>
+                                        <line x1="18" y1="9" x2="12" y2="15"></line>
+                                        <line x1="12" y1="9" x2="18" y2="15"></line>
+                                    </svg>
+                                    My Bookings
+                                </a>
+                                <a href="#" class="dropdown-link">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                                    </svg>
+                                    Support
+                                </a>
+                                <a href="#" class="dropdown-link">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <circle cx="12" cy="12" r="3"></circle>
+                                        <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
+                                    </svg>
+                                    Settings
+                                </a>
+                            </div>
+                            
+                            <div class="dropdown-footer">
+                                <button class="logout-btn" onclick="logout()">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path>
+                                        <polyline points="16 17 21 12 16 7"></polyline>
+                                        <line x1="21" y1="12" x2="9" y2="12"></line>
+                                    </svg>
+                                    Log Out
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Uncomment this section if user is not logged in -->
+                    <!-- <a href="#" class="sign-in-btn">Sign In</a> -->
+                </div>
+                
+                <button class="mobile-menu-btn">☰</button>
+            </nav>
+        </div>
+    </header>
+    
+    <main>
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-badge">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                        </svg>
+                        The Future of Car Sharing
+                    </div>
+                    <h1 class="display">Drive your perfect match, anytime</h1>
+                    <p class="subtitle">Discover and book the ideal car for every occasion. Thousands of vehicles available in your city with insurance included.</p>
+                </div>
+                
+                <div class="search-container">
+                    <form class="search-form">
+                        <div class="search-group">
+                            <label class="search-label">Location</label>
+                            <div class="autocomplete-wrapper">
+                                <input type="text" class="search-input" id="home-location" name="location" placeholder="Search in Addis Ababa..." autocomplete="off">
+                                <div class="autocomplete-results" id="home-location-results"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="search-group">
+                            <label class="search-label">Pickup Date</label>
+                            <input type="date" class="search-input" name="pickup_date" min="2025-01-10">
+                        </div>
+                        
+                        <div class="search-group">
+                            <label class="search-label">Return Date</label>
+                            <input type="date" class="search-input" name="return_date" min="2025-01-10">
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary search-button">Search Cars</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+        
+        <section class="cars-section">
+            <div class="container">
+                <div class="section-header">
+                    <div>
+                        <div class="section-badge">Featured Cars</div>
+                        <h2 class="section-title">Popular in your area</h2>
+                    </div>
+                    
+                    <a href="#" class="view-all">View all <span>→</span></a>
+                </div>
+                
+                <div class="cars-filter">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="electric">Electric</button>
+                    <button class="filter-btn" data-filter="suv">SUVs</button>
+                    <button class="filter-btn" data-filter="sedan">Sedans</button>
+                    <button class="filter-btn" data-filter="luxury">Luxury</button>
+                    <button class="filter-btn" data-filter="economy">Economy</button>
+                    <button class="filter-btn" data-filter="convertible">Convertible</button>
+                </div>
+                
+                <div class="cars-grid">
+                    <div class="car-card" data-type="sedan" data-fuel="electric" data-car-id="1">
+                        <div class="car-image">
+                            <div class="car-badge">New</div>
+                            <button class="car-like">❤</button>
+                            <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgZmlsbD0iI2YxZjVmOSIvPjxwYXRoIGQ9Ik03MCAxNzBjMCAwIDQwLTQwIDEzMC00MHM2MCA0MCAxMzAgNDBsMTAtMTBjMCAwLTMwLTUwLTE0MC01MFM4MCAxNjAgNzAgMTcweiIgZmlsbD0iIzY0NzQ4YiIvPjxjaXJjbGUgY3g9IjExMCIgY3k9IjE3MCIgcj0iMzAiIGZpbGw9IiMyMTIxMjEiLz48Y2lyY2xlIGN4PSIyODAiIGN5PSIxNzAiIHI9IjMwIiBmaWxsPSIjMjEyMTIxIi8+PC9zdmc+" alt="Tesla Model 3">
+                        </div>
+                        <div class="car-details">
+                            <h3 class="car-title">Tesla Model 3</h3>
+                            <p class="car-type">Electric Sedan</p>
+                            
+                            <div class="car-features">
+                                <div class="car-feature">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75M9 11a4 4 0 1 0 0-8 4 4 0 0 0 0 8z"/>
+                                    </svg>
+                                    <span class="car-feature-text">5 Seats</span>
+                                </div>
+                                <div class="car-feature">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                        <path d="M19.25 14.25v-4.5l-1.374.416 3 4.5c.412.617 1.374.326 1.374-.416v-4.5a.75.75 0 0 0-1.5 0v4.5l1.374-.416-3-4.5c-.412-.617-1.374-.326-1.374.416v4.5a.75.75 0 0 0 1.5 0m3 6a3.75 3.75 0 0 0-3.75-3.75.75.75 0 0 0-.75.75v6c0 .414.336.75.75.75a3.75 3.75 0 0 0 3.75-3.75m-1.5 0a2.25 2.25 0 0 1-2.25 2.25l.75.75v-6l-.75.75a2.25 2.25 0 0 1 2.25 2.25M18.5 4.5H20A2.25 2.25 0 0 0 20 0h-1.5a.75.75 0 0 0-.75.75v6a.75.75 0 0 0 1.5 0v-6l-.75.75H20A.75.75 0 0 1 20 3h-1.5a.75.75 0 0 0 0 1.5M4.25 6.75v4.5A2.25 2.25 0 0 0 6.5 13.5H8a.75.75 0 0 1 .75.75v4.5A2.25 2.25 0 0 0 11 21h3a.75.75 0 0 0 0-1.5h-3a.75.75 0 0 1-.75-.75v-4.5A2.25 2.25 0 0 0 8 12H6.5a.75.75 0 0 1-.75-.75v-4.5a.75.75 0 0 0-1.5 0m3-3a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0m1.5 0a3.75 3.75 0 1 0-7.5 0 3.75 3.75 0 0 0 7.5 0"></path>
+                                    </svg>
+                                    <span class="car-feature-text">Automatic</span>
+                                </div>
+                                <div class="car-feature">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                        <path d="M14.69 2.21L4.33 11.49c-.64.58-.28 1.65.58 1.73L8 13.64V19c0 .55.45 1 1 1s1-.45 1-1v-6.14L12.96 11l1.06-2.23L16.31 7l5.74-.5c.86-.08 1.22-1.15.58-1.73L12.27.21c-.39-.35-.98-.35-1.37 0L9.69 2.21c-.64.58-.28 1.65.58 1.73z"/>
+                                    </svg>
+                                    <span class="car-feature-text">Electric</span>
+                                </div>
+                            </div>
+                            
+                            <div class="car-location">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+                                </svg>
+                                Bole
+                            </div>
+                            
+                            <div class="car-price">
+                                <div class="price-amount">
+                                    $68<span class="price-period">/day</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="car-card" data-type="suv" data-fuel="gasoline" data-car-id="2">
+                        <div class="car-image">
+                            <button class="car-like">❤</button>
+                            <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgZmlsbD0iI2YxZjVmOSIvPjxwYXRoIGQ9Ik02MCAyMDBjMCAwIDQwLTYwIDEzMC02MHM2MCA2MCAxNDAgNjBsMTAtMTBjMCAwLTMwLTcwLTE1MC03MFM3MCAzOCA2MCAyMDB6IiBmaWxsPSIjNjQ3NDhiIi8+PGNpcmNsZSBjeD0iMTEwIiBjeT0iMjAwIiByPSIzNSIgZmlsbD0iIzIxMjEyMSIvPjxjaXJjbGUgY3g9IjI5MCIgY3k9IjIwMCIgcj0iMzUiIGZpbGw9IiMyMTIxMjEiLz48L3N2Zz4=" alt="Honda CR-V">
+                        </div>
+                        <div class="car-details">
+                            <h3 class="car-title">Honda CR-V</h3>
+                            <p class="car-type">SUV</p>
+                            
+                            <div class="car-features">
+                                <div class="car-feature">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75M9 11a4 4 0 1 0 0-8 4 4 0 0 0 0 8z"/>
+                                    </svg>
+                                    <span class="car-feature-text">7 Seats</span>
+                                </div>
+                                <div class="car-feature">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                        <path d="M19.25 14.25v-4.5l-1.374.416 3 4.5c.412.617 1.374.326 1.374-.416v-4.5a.75.75 0 0 0-1.5 0v4.5l1.374-.416-3-4.5c-.412-.617-1.374-.326-1.374.416v4.5a.75.75 0 0 0 1.5 0m3 6a3.75 3.75 0 0 0-3.75-3.75.75.75 0 0 0-.75.75v6c0 .414.336.75.75.75a3.75 3.75 0 0 0 3.75-3.75m-1.5 0a2.25 2.25 0 0 1-2.25 2.25l.75.75v-6l-.75.75a2.25 2.25 0 0 1 2.25 2.25M18.5 4.5H20A2.25 2.25 0 0 0 20 0h-1.5a.75.75 0 0 0-.75.75v6a.75.75 0 0 0 1.5 0v-6l-.75.75H20A.75.75 0 0 1 20 3h-1.5a.75.75 0 0 0 0 1.5M4.25 6.75v4.5A2.25 2.25 0 0 0 6.5 13.5H8a.75.75 0 0 1 .75.75v4.5A2.25 2.25 0 0 0 11 21h3a.75.75 0 0 0 0-1.5h-3a.75.75 0 0 1-.75-.75v-4.5A2.25 2.25 0 0 0 8 12H6.5a.75.75 0 0 1-.75-.75v-4.5a.75.75 0 0 0-1.5 0m3-3a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0m1.5 0a3.75 3.75 0 1 0-7.5 0 3.75 3.75 0 0 0 7.5 0"></path>
+                                    </svg>
+                                    <span class="car-feature-text">Automatic</span>
+                                </div>
+                                <div class="car-feature">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M3,2A1,1 0 0,0 2,3V19A3,3 0 0,0 5,22H11A3,3 0 0,0 14,19V16H16V19A1,1 0 0,0 17,20H18A1,1 0 0,0 19,19V12A1,1 0 0,0 18,11H17A1,1 0 0,0 16,12V14H14V3A1,1 0 0,0 13,2H3M4,4H12V12H4V4M6,6V10H10V6H6Z"/>
+                                    </svg>
+                                    <span class="car-feature-text">Gasoline</span>
+                                </div>
+                            </div>
+                            
+                            <div class="car-location">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+                                </svg>
+                                Kazanchis
+                            </div>
+                            
+                            <div class="car-price">
+                                <div class="price-amount">
+                                    $45<span class="price-period">/day</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="car-card" data-type="luxury" data-fuel="gasoline" data-car-id="3">
+                        <div class="car-image">
+                            <button class="car-like">❤</button>
+                            <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgZmlsbD0iI2YxZjVmOSIvPjxwYXRoIGQ9Ik01MCAyMDBjMCAwIDUwLTkwIDEzMC05MHM3MCA5MCAxNjAgOTBsMTAtMTBjMCAwLTQwLTEwMC0xNzAtMTAwUzYwIDEwIDUwIDIwMHoiIGZpbGw9IiM2NDc0OGIiLz48Y2lyY2xlIGN4PSIxMDAiIGN5PSIyMDAiIHI9IjMwIiBmaWxsPSIjMjEyMTIxIi8+PGNpcmNsZSBjeD0iMzEwIiBjeT0iMjAwIiByPSIzMCIgZmlsbD0iIzIxMjEyMSIvPjwvc3ZnPg==" alt="BMW 3 Series">
+                        </div>
+                        <div class="car-details">
+                            <h3 class="car-title">BMW 3 Series</h3>
+                            <p class="car-type">Luxury Sedan</p>
+                            
+                            <div class="car-features">
+                                <div class="car-feature">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75M9 11a4 4 0 1 0 0-8 4 4 0 0 0 0 8z"/>
+                                    </svg>
+                                    <span class="car-feature-text">5 Seats</span>
+                                </div>
+                                <div class="car-feature">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                        <path d="M19.25 14.25v-4.5l-1.374.416 3 4.5c.412.617 1.374.326 1.374-.416v-4.5a.75.75 0 0 0-1.5 0v4.5l1.374-.416-3-4.5c-.412-.617-1.374-.326-1.374.416v4.5a.75.75 0 0 0 1.5 0m3 6a3.75 3.75 0 0 0-3.75-3.75.75.75 0 0 0-.75.75v6c0 .414.336.75.75.75a3.75 3.75 0 0 0 3.75-3.75m-1.5 0a2.25 2.25 0 0 1-2.25 2.25l.75.75v-6l-.75.75a2.25 2.25 0 0 1 2.25 2.25M18.5 4.5H20A2.25 2.25 0 0 0 20 0h-1.5a.75.75 0 0 0-.75.75v6a.75.75 0 0 0 1.5 0v-6l-.75.75H20A.75.75 0 0 1 20 3h-1.5a.75.75 0 0 0 0 1.5M4.25 6.75v4.5A2.25 2.25 0 0 0 6.5 13.5H8a.75.75 0 0 1 .75.75v4.5A2.25 2.25 0 0 0 11 21h3a.75.75 0 0 0 0-1.5h-3a.75.75 0 0 1-.75-.75v-4.5A2.25 2.25 0 0 0 8 12H6.5a.75.75 0 0 1-.75-.75v-4.5a.75.75 0 0 0-1.5 0m3-3a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0m1.5 0a3.75 3.75 0 1 0-7.5 0 3.75 3.75 0 0 0 7.5 0"></path>
+                                    </svg>
+                                    <span class="car-feature-text">Automatic</span>
+                                </div>
+                                <div class="car-feature">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M3,2A1,1 0 0,0 2,3V19A3,3 0 0,0 5,22H11A3,3 0 0,0 14,19V16H16V19A1,1 0 0,0 17,20H18A1,1 0 0,0 19,19V12A1,1 0 0,0 18,11H17A1,1 0 0,0 16,12V14H14V3A1,1 0 0,0 13,2H3M4,4H12V12H4V4M6,6V10H10V6H6Z"/>
+                                    </svg>
+                                    <span class="car-feature-text">Gasoline</span>
+                                </div>
+                            </div>
+                            
+                            <div class="car-location">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+                                </svg>
+                                Piassa
+                            </div>
+                            
+                            <div class="car-price">
+                                <div class="price-amount">
+                                    $89<span class="price-period">/day</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="car-card" data-type="economy" data-fuel="gasoline" data-car-id="4">
+                        <div class="car-image">
+                            <button class="car-like">❤</button>
+                            <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgZmlsbD0iI2YxZjVmOSIvPjxwYXRoIGQ9Ik04MCAyMDBjMCAwIDMwLTMwIDEwMC0zMHM2MCAzMCAxMjAgMzBsMTAtMTBjMCAwLTIwLTQwLTEzMC00MFM5MCAyIDgwIDIwMHoiIGZpbGw9IiM2NDc0OGIiLz48Y2lyY2xlIGN4PSIxMjAiIGN5PSIyMDAiIHI9IjI1IiBmaWxsPSIjMjEyMTIxIi8+PGNpcmNsZSBjeD0iMjcwIiBjeT0iMjAwIiByPSIyNSIgZmlsbD0iIzIxMjEyMSIvPjwvc3ZnPg==" alt="Toyota Corolla">
+                        </div>
+                        <div class="car-details">
+                            <h3 class="car-title">Toyota Corolla</h3>
+                            <p class="car-type">Compact Sedan</p>
+                            
+                            <div class="car-features">
+                                <div class="car-feature">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75M9 11a4 4 0 1 0 0-8 4 4 0 0 0 0 8z"/>
+                                    </svg>
+                                    <span class="car-feature-text">5 Seats</span>
+                                </div>
+                                <div class="car-feature">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                        <path d="M1.5 6.75v-3a.75.75 0 0 0-1.5 0v3a.75.75 0 0 0 1.5 0m2.85-.45-2.25-3a.75.75 0 1 0-1.2.9l2.25 3a.75.75 0 1 0 1.2-.9m18.9 13.95h-3L21 21v-.75A2.25 2.25 0 0 1 23.25 18l-.75-.75v6a.75.75 0 0 0 1.5 0v-6a.75.75 0 0 0-.75-.75 3.75 3.75 0 0 0-3.75 3.75V21c0 .414.336.75.75.75h3a.75.75 0 0 0 0-1.5M18.024 2.056A.75.75 0 1 1 18.75 3v1.5a.75.75 0 1 1-.722.95.75.75 0 1 0-1.446.4A2.25 2.25 0 1 0 18.75 3c-1 0-1 1.5 0 1.5a2.25 2.25 0 1 0-2.174-2.832.75.75 0 0 0 1.448.388M12 18.75a.75.75 0 0 1 1.5 0c0 .315-.107.622-.304.868l-2.532 3.163A.75.75 0 0 0 11.25 24h3a.75.75 0 0 0 0-1.5h-3l.586 1.219 2.532-3.164c.41-.513.632-1.15.632-1.805a2.25 2.25 0 0 0-4.5 0 .75.75 0 0 0 1.5 0M8.25 1.5H9v5.25a.75.75 0 0 0 1.5 0V1.5A1.5 1.5 0 0 0 9 0h-.75a.75.75 0 0 0 0 1.5m0 6h3a.75.75 0 0 0 0-1.5h-3a.75.75 0 0 0 0 1.5m-6-7.5H.75A.75.75 0 0 0 0 .75v3c0 .414.336.75.75.75h1.5a2.25 2.25 0 0 0 0-4.5m0 1.5a.75.75 0 0 1 0 1.5H.75l.75.75v-3l-.75.75zm8.25 11.25v-3a.75.75 0 0 0-1.5 0v3a.75.75 0 0 0 1.5 0m1.5 0v1.5a.75.75 0 0 0 1.5 0v-1.5a.75.75 0 0 0-1.5 0m7.5 0v-3a.75.75 0 0 0-1.5 0v3a.75.75 0 0 0 1.5 0m3 1.5A2.25 2.25 0 0 0 20.25 12h-15A2.25 2.25 0 0 1 3 9.75a.75.75 0 0 0-1.5 0 3.75 3.75 0 0 0 3.75 3.75h15a.75.75 0 0 1 .75.75.75.75 0 0 0 1.5 0"></path>
+                                    </svg>
+                                    <span class="car-feature-text">Manual</span>
+                                </div>
+                                <div class="car-feature">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M3,2A1,1 0 0,0 2,3V19A3,3 0 0,0 5,22H11A3,3 0 0,0 14,19V16H16V19A1,1 0 0,0 17,20H18A1,1 0 0,0 19,19V12A1,1 0 0,0 18,11H17A1,1 0 0,0 16,12V14H14V3A1,1 0 0,0 13,2H3M4,4H12V12H4V4M6,6V10H10V6H6Z"/>
+                                    </svg>
+                                    <span class="car-feature-text">Gasoline</span>
+                                </div>
+                            </div>
+                            
+                            <div class="car-location">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+                                </svg>
+                                Merkato
+                            </div>
+                            
+                            <div class="car-price">
+                                <div class="price-amount">
+                                    $32<span class="price-period">/day</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="faq-section">
+            <div class="container">
+                <div class="faq-header">
+                    <div class="section-badge">FAQ</div>
+                    <h2 class="section-title">Frequently Asked Questions</h2>
+                    <p class="subtitle">Everything you need to know about the RideShare platform.</p>
+                </div>
+                
+                <div class="faq-list">
+                    <div class="faq-item active">
+                        <div class="faq-question">
+                            How does RideShare work?
+                            <div class="faq-icon">+</div>
+                        </div>
+                        <div class="faq-answer">
+                            RideShare connects car owners with people who need a car. Browse available cars in your area, book the one you like, and unlock it with your smartphone. All bookings include insurance and roadside assistance. When you're done, return the car to its original location.
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            What do I need to rent a car?
+                            <div class="faq-icon">+</div>
+                        </div>
+                        <div class="faq-answer">
+                            To rent a car through RideShare, you need to be at least 21 years old, have a valid driver's license, and a clean driving record. You'll need to complete a quick verification process when you sign up. The process usually takes less than 24 hours.
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            Is insurance included with my booking?
+                            <div class="faq-icon">+</div>
+                        </div>
+                        <div class="faq-answer">
+                            Yes, every RideShare booking includes comprehensive insurance coverage. The insurance covers damage to the car, liability protection, and 24/7 roadside assistance. There's no need to purchase additional insurance unless you want to reduce your deductible.
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            How do I list my car on RideShare?
+                            <div class="faq-icon">+</div>
+                        </div>
+                        <div class="faq-answer">
+                            Listing your car is simple! Create an account, provide details about your car, set your availability and pricing, and complete the verification process. Once approved, your car will be visible to potential renters in your area.
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            What happens if the car gets damaged?
+                            <div class="faq-icon">+</div>
+                        </div>
+                        <div class="faq-answer">
+                            If the car gets damaged during your rental, report it immediately through the RideShare app. Take photos of the damage and submit them. Your insurance coverage will kick in, and you'll only be responsible for the deductible amount.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="cta-section">
+            <div class="container">
+                <div class="cta-card">
+                    <div class="cta-shape cta-shape-1"></div>
+                    <div class="cta-shape cta-shape-2"></div>
+                    
+                    <div class="cta-content">
+                        <h2 class="cta-title">Ready to drive on your terms?</h2>
+                        <p class="cta-subtitle">Join thousands of happy users who have embraced a new way of mobility.</p>
+                        
+                        <div class="cta-buttons">
+                            <a href="browse.html" class="btn btn-white btn-lg">Find Cars</a>
+                            <a href="host.html" class="btn btn-outline btn-lg">List Your Car</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <a href="#" class="footer-logo">
+                        <div class="logo-mark">R</div>
+                        RideShare
+                    </a>
+                    <p class="footer-description">Peer-to-peer car sharing marketplace connecting car owners with people who need a car. Find, book, and unlock cars directly from your phone.</p>
+                    
+                    <div class="download-apps">
+                        <a href="#" class="app-badge">
+                            <div class="app-icon">
+                                <svg width="20" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M17.5,1.4l0.9,1.4L12,10L5.7,2.8l0.9-1.4C7.9,0,9.9,0,12,0C14.1,0,16.1,0,17.5,1.4z M0,7.2v9.6C0,19.6,2.2,22,5.8,22h12.4c3.6,0,5.8-2.4,5.8-5.2V7.2c0-1.2-0.5-2.2-1.3-3.1L12,17.5L1.3,4.1C0.5,5,0,6,0,7.2z"></path>
+                                </svg>
+                            </div>
+                            <div class="app-text">
+                                <span class="app-text-small">Download on the</span>
+                                <span class="app-text-big">App Store</span>
+                            </div>
+                        </a>
+                        <a href="#" class="app-badge">
+                            <div class="app-icon">
+                                <svg width="20" height="22" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M3.82,1.3C2.73,2.39,2,4.03,2,6c0,1.97,0.73,3.61,1.82,4.7L12,19l8.18-8.3C21.27,9.61,22,7.97,22,6c0-1.97-0.73-3.61-1.82-4.7L12,10L3.82,1.3z M0,6c0-2.76,1.06-5.28,2.77-7L12,8l9.23-9C22.94,0.72,24,3.24,24,6c0,2.76-1.06,5.28-2.77,7L12,22l-9.23-9C1.06,11.28,0,8.76,0,6z"></path>
+                                </svg>
+                            </div>
+                            <div class="app-text">
+                                <span class="app-text-small">GET IT ON</span>
+                                <span class="app-text-big">Google Play</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="footer-title">Company</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Press</a></li>
+                        <li><a href="#">Investors</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="footer-title">Support</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Safety</a></li>
+                        <li><a href="#">Insurance</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="footer-title">Host</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">List Your Car</a></li>
+                        <li><a href="#">Host Resources</a></li>
+                        <li><a href="#">Insurance Coverage</a></li>
+                        <li><a href="#">Success Stories</a></li>
+                        <li><a href="#">Earnings Calculator</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>© 2025 RideShare. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/home.js"></script>
+</body>
+</html>
